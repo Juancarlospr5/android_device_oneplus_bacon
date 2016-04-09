@@ -50,6 +50,7 @@ STRICT_ALIASING := false
 KRAIT_TUNINGS := true
 GRAPHITE_OPTS := false
 ENABLE_GCCONLY := false
+USE_PIPE := true
 
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
@@ -63,8 +64,6 @@ TARGET_KERNEL_CONFIG := arsenic_defconfig
 TARGET_KERNEL_SOURCE := kernel/oneplus/msm8974
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
 
-# ANT+
-BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := bacon,A0001

@@ -61,6 +61,8 @@ on enable-low-power
     write /sys/module/cpu_boost/parameters/sync_threshold 1728000
     write /sys/module/cpu_boost/parameters/input_boost_freq 1497600
     write /sys/module/cpu_boost/parameters/input_boost_ms 40
+    write /sys/module/cpu_boost/parameters/wakeup_boost 1
+    write /sys/module/workqueue/parameters/power_efficient 1
 
     write /sys/class/devfreq/qcom,cpubw.40/governor "cpubw_hwmon"
     write /sys/class/kgsl/kgsl-3d0/devfreq/governor msm-adreno-tz
